@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
-  <header class="header container">
+  <header class="header">
+    <div class="container header__nav">
       <h1 class="header__logo"><span>TRAVEL</span>BLOG</h1>
 
       <nav>
@@ -21,6 +22,7 @@
           <li><a class="nav__link" href="#signin">Sign In</a></li>
         </ul>
       </nav>
+    </div>
   </header>
 
   <section class="hero">
@@ -114,7 +116,8 @@
   </section>
 
   <section class="auth" id="signin">
-    <h2 class="auth__title">Sign in form</h2>
+    <div class="container">
+      <h2 class="auth__title">Sign in form</h2>
 
     <form class="auth__form">
       <div class="auth__form-item">
@@ -156,45 +159,50 @@
         <button class="auth__button" type="submit">Submit</button>
       </div>
     </form>
+    </div>
   </section>
 
-  <section class="contacts container">
-    <div class="contacts__item contacts__item--publisher">
-      <h2 class="contacts__title">Contact the Publisher</h2>
+  <section class="contacts">
+    <div class="container contacts__items">
+      <div class="contacts__item contacts__item--publisher">
+        <h2 class="contacts__title">Contact the Publisher</h2>
+        
+        <p class="contacts__text">example@email.com</p>
+  
+        <p class="contacts__text">+1 234 567 89 00</p>
+      </div>
+  
+      <div class="contacts__item contacts__item--explore">
+        <h2 class="contacts__title">Explore</h2>
+  
+        <a href="#" class="contacts__text contacts__link">About</a>
+  
+        <a href="#" class="contacts__text contacts__link">Partners</a>
+  
+        <a href="#" class="contacts__text contacts__link">Job Opportunities</a>
+  
+        <a href="#" class="contacts__text contacts__link">Advertise</a>
+  
+        <a href="#" class="contacts__text contacts__link">Membership</a>
+      </div>
+  
+      <div class="contacts__item">
+        <h2 class="contacts__title">Headquater</h2>
+  
+        <p class="contacts__text contacts__text--headquarters">1999 Middleville, <br>
+          NY 1001, New York <br>
+          USA
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__text">2024 | Travel Blog</p>
       
-      <p class="contacts__text">example@email.com</p>
-
-      <p class="contacts__text">+1 234 567 89 00</p>
+      <a class="footer__link" href="#">Subscribe Now</a>
     </div>
-
-    <div class="contacts__item contacts__item--explore">
-      <h2 class="contacts__title">Explore</h2>
-
-      <a href="#" class="contacts__text contacts__link">About</a>
-
-      <a href="#" class="contacts__text contacts__link">Partners</a>
-
-      <a href="#" class="contacts__text contacts__link">Job Opportunities</a>
-
-      <a href="#" class="contacts__text contacts__link">Advertise</a>
-
-      <a href="#" class="contacts__text contacts__link">Membership</a>
-    </div>
-
-    <div class="contacts__item">
-      <h2 class="contacts__title">Headquater</h2>
-
-      <p class="contacts__text contacts__text--headquarters">1999 Middleville, <br>
-        NY 1001, New York <br>
-        USA
-      </p>
-    </div>
-  </section>
-
-  <footer class="footer container">
-    <p class="footer__text">2024 | Travel Blog</p>
-    
-    <a class="footer__link" href="#">Subscribe Now</a>
   </footer>
 </body>
 </html>

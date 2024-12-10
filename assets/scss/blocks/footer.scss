@@ -1,10 +1,14 @@
 .footer {
     background-color: #343A40;
     height: 80px;
+}
+
+.footer__content {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    height: 100%;
     gap: 9px;
 
     @include onDesktop {

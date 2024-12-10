@@ -1,0 +1,103 @@
+.auth {
+    background-color: #EFEFEF;
+    padding: 68px 20px 83px 20px;
+
+    @include onDesktop {
+        padding: 68px 210px 83px 210px;
+    }
+}
+
+.auth__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 27px;
+    
+    @include onDesktop {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 48px;
+    
+    @include onDesktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.auth__form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.auth__input {
+    height: 42px;
+    padding-left: 14px;
+}
+
+.auth__textarea {
+    height: 100%;
+    padding-top: 8px;
+    padding-left: 14px;
+}
+
+.auth__form-checkbox {
+    margin-bottom: 14px;
+}
+
+.auth__checkbox {
+    display: none;
+}
+
+.auth__form-checkbox label {
+    position: relative;
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+.auth__form-checkbox label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.auth__checkbox:checked + label::before {
+    background-color: #D4A373;
+}
+
+.auth__form-buttons {
+    padding-top: 22px
+}
+
+.auth__button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    background-color: #D4A373;
+    color: #fff;
+    padding: 9px 0;
+    width: 100%;
+
+    @include onDesktop {
+        max-width: 323px;
+    }
+
+    &:hover {
+        background-color: #C1914B;
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <header class="header container">
+      <h1 class="header__logo"><span>TRAVEL</span>BLOG</h1>
+
+      <nav>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#articles">Articles</a></li>
+          
+          <li><a class="nav__link" href="#signin">Sign In</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <h2 class="hero__title">
+        Welcome to Travel Blog:
+        
+        <br>
+        
+        Insights, Inspiration, and More!
+      </h2>
+      
+      <hr class="hero__strip">
+  
+      <p class="hero_text">Insights, inspiration, and practical advice on a wide range of topics. Whether you're looking for the latest trends, expert tips, or simply a bit of inspiration to brighten your day!</p>
+  
+      <a class="hero__button"  href="#articles">Scroll to articles</a>
+    </div>
+    
+    <div class="hero__fadder" />
+  </section>
+
+  <section id="articles" class="articles container">
+    <h2 class="articles__title">Latest Articles</h2>
+
+    <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <ul class="articles__filter">
+      <li>All</li>
+
+      <li>Adventure</li>
+      
+      <li>Travel</li>
+      
+      <li>Fashion</li>
+      
+      <li>Techmologi</li>
+      
+      <li>Branding</li>
+    </ul>
+
+    <div class="articles__grid">
+      <article class="article">
+        <img class="article__image" src="https://images.unsplash.com/1/work-stations-plus-espresso.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 1">
+        
+        <div class="article__content">
+          <p class="article__date">08.08.2021</p>
+        
+          <h3 class="article__title">The Best Travel Destinations</h3>
+        
+          <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img class="article__image" src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 2">
+        
+        <div class="article__content">
+          <p class="article__date">08.08.2021</p>
+        
+          <h3 class="article__title">The Best Travel Destinations</h3>
+        
+          <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img class="article__image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 3">
+        
+        <div class="article__content">
+          <p class="article__date">08.08.2021</p>
+        
+          <h3 class="article__title">The Best Travel Destinations</h3>
+        
+          <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img class="article__image" src="https://images.unsplash.com/photo-1421757350652-9f65a35effc7?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 4">
+        
+        <div class="article__content">
+          <p class="article__date">08.08.2021</p>
+        
+          <h3 class="article__title">The Best Travel Destinations</h3>
+        
+          <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="auth" id="signin">
+    <h2 class="auth__title">Sign in form</h2>
+
+    <form class="auth__form">
+      <div class="auth__form-item">
+        <label for="name" class="auth__label">Name:</label>
+        <input placeholder="Your name" type="text" id="name" name="name" class="auth__input" required>
+      </div>
+
+      <div class="auth__form-item">
+        <label for="surname">Surname:</label>
+        <input placeholder="Your surname" type="text" id="surname" name="surname" class="auth__input" required>
+      </div>
+
+      <div class="auth__form-item">
+        <label for="email">Email:</label>
+        <input placeholder="example@email.com" type="email" id="email" name="email" class="auth__input" required>
+      </div>
+
+      <div class="auth__form-item">
+        <label for="password">Password:</label>
+        <input placeholder="********" type="password" id="password" name="password" class="auth__input" required>
+      </div>
+
+      <div class="auth__form-item">
+        <label for="content">Content:</label>
+        <textarea placeholder="Message" id="content" name="content" class="auth__textarea" required></textarea>
+      </div>
+      
+      <div class="auth__form-buttons">        
+        <div class="auth__form-checkbox">
+          <input type="checkbox" id="consent_one" name="consent_one" class="auth__checkbox" required>
+          <label for="consent_one" class="auth__label">Consent one</label>
+        </div>
+
+        <div class="auth__form-checkbox">
+          <input checked type="checkbox" id="consent_two" name="consent_two" class="auth__checkbox auth__checkbox--checked" required>
+          <label for="consent_two" class="auth__label">Consent two (pre checked)</label>
+        </div>
+
+        <button class="auth__button" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="contacts container">
+    <div class="contacts__item contacts__item--publisher">
+      <h2 class="contacts__title">Contact the Publisher</h2>
+      
+      <p class="contacts__text">example@email.com</p>
+
+      <p class="contacts__text">+1 234 567 89 00</p>
+    </div>
+
+    <div class="contacts__item contacts__item--explore">
+      <h2 class="contacts__title">Explore</h2>
+
+      <a href="#" class="contacts__text contacts__link">About</a>
+
+      <a href="#" class="contacts__text contacts__link">Partners</a>
+
+      <a href="#" class="contacts__text contacts__link">Job Opportunities</a>
+
+      <a href="#" class="contacts__text contacts__link">Advertise</a>
+
+      <a href="#" class="contacts__text contacts__link">Membership</a>
+    </div>
+
+    <div class="contacts__item">
+      <h2 class="contacts__title">Headquater</h2>
+
+      <p class="contacts__text contacts__text--headquarters">1999 Middleville, <br>
+        NY 1001, New York <br>
+        USA
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <p class="footer__text">2024 | Travel Blog</p>
+    
+    <a class="footer__link" href="#">Subscribe Now</a>
+  </footer>
+</body>
+</html>
+

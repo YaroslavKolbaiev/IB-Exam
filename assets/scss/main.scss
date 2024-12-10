@@ -1,0 +1,15 @@
+@import "settings/reset";
+@import "settings/mixins";
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/articles';
+@import 'blocks/auth';
+@import 'blocks/container';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+* {
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+}

@@ -1,0 +1,65 @@
+.contacts {
+    font-family: "Lora", serif;
+    background-color: #212529;
+    padding-top: 43px;
+    padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 44px;
+
+
+    @include onDesktop {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0;
+        padding-top: 109px;
+        padding-bottom: 103px;
+    }
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts__item--publisher {
+    @include onDesktop {
+        margin-right: 191px;
+    }
+}
+
+.contacts__item--explore {
+    @include onDesktop {
+        margin-right: 227px;
+    }
+}
+
+.contacts__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+}
+
+.contacts__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E5E5E5;
+}
+
+.contacts__text--headquarters {
+    line-height: 20px;
+}
+
+.contacts__link {
+    text-decoration: none;
+
+    &:hover {
+        color: #FFD600;
+    }
+}

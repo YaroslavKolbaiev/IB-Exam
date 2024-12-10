@@ -1,0 +1,54 @@
+.header {
+    font-family: "Open Sans", sans-serif;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    line-height: 27px;
+
+    span {
+        color: #FFD600;
+    }
+
+    @include onTablet {
+        font-size: 24px;
+    }
+}
+
+.nav__links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+    @include onTablet {
+        gap: 20px;
+    }
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 19px;
+
+    &:hover {
+        color: #FFD600;
+    }
+
+    @include onTablet {
+        font-size: 14px;
+    }
+}

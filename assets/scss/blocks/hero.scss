@@ -1,0 +1,79 @@
+.hero {
+    position: relative;
+    height: 741px;
+    background-image: url('/assets/images/hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    > * {
+        z-index: 10;
+    }
+}
+
+.hero__fadder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+
+    @include onDesktop {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.hero_text {
+    font-family: "Open Sans", sans-serif;
+    max-width: 420px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #E5E5E5;
+}
+
+.hero__strip {
+    width: 100px;
+}
+
+.hero__button {
+    text-decoration: none;
+    width: 126px;
+    padding: 9px 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    border: 1px solid #D4A373;
+    text-align: center;
+
+    @include onDesktop {
+        width: 323px;
+    }
+
+    &:hover {
+        background-color: #D4A373;
+    }
+}
